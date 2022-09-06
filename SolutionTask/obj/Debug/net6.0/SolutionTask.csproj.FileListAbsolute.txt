@@ -1,0 +1,15 @@
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\bin\Debug\net6.0\SolutionTask.exe
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\bin\Debug\net6.0\SolutionTask.deps.json
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\bin\Debug\net6.0\SolutionTask.runtimeconfig.json
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\bin\Debug\net6.0\SolutionTask.dll
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\bin\Debug\net6.0\SolutionTask.pdb
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.csproj.AssemblyReference.cache
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.AssemblyInfoInputs.cache
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.AssemblyInfo.cs
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.csproj.CoreCompileInputs.cache
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.dll
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\refint\SolutionTask.dll
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.pdb
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\SolutionTask.genruntimeconfig.cache
+C:\Users\LLosh\OneDrive\Рабочий стол\IT\Control_work_of_the_first_quarter\SolutionTask\obj\Debug\net6.0\ref\SolutionTask.dll
