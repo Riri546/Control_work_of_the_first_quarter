@@ -6,30 +6,37 @@
 Console.Clear();
 
 
-double[] Main()
+Console.Clear();
+
+int i;
+int t;
+
+//The method returns an array filled with random numbers from -9 to 9.
+int[] FillingArray()
 {
-    // Задать с клавиатуры число элементов массива
-    int n;
-    Console.WriteLine("Введите число элементов массива");
-    n = Convert.ToInt16(Console.ReadLine());
-    // Объявим одномерный массив inputArraay с n-элементами 
-    double[] inputArraay = new double[n];
-    int i = 0;
-    while (i < n)
+    int[] outArray = new int[12];
+    i = 0;
+    System.Random numberSintezator = new Random();
+
+    while (i < 12)
     {
-        Console.WriteLine("Введите элемент массива");
-        /* Вводим элементы массива с клавиатуры 
-         * и заполняем ими массив */
-        inputArraay[i] = double.Parse(Console.ReadLine());
-        Console.WriteLine();
+        outArray[i] = numberSintezator.Next(-9, 10);
         i++;
     }
-    // Вывод содержимого массива
-    for (i = 0; i < n; i = i + 1)
-        Console.WriteLine("Элемент[" + i + "]: " + inputArraay[i]);
-    Console.ReadKey();
-    return inputArraay;
+    return outArray;
 }
+
+//The method outputs a random array of numbers to the console
+void PrintIntArray(int[] inputArray)
+{
+    i = 0;
+
+    while (i < inputArray.Length - 1)
+    {
+        Console.Write(inputArray[i] + ", ");
+        i++;
+    }
+    Console.WriteLine(inputArray[i]);
 
 //The method calculates the factorial
 double[] factorial(double[] inputArraay)
@@ -50,7 +57,4 @@ double[] factorial(double[] inputArraay)
     }
     return resultArray;
 }
-
-double[] result = Main();
-factorial(result);
-
+}
