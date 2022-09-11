@@ -5,56 +5,57 @@
 //it is not recommended to use collections, it is better to do exclusively with arrays
 Console.Clear();
 
-
-Console.Clear();
-
 int i;
-int t;
 
-//The method returns an array filled with random numbers from -9 to 9.
-int[] FillingArray()
+//
+string[] FillingArray()
 {
-    int[] outArray = new int[12];
-    i = 0;
+    string[] outArray = new string[10];
+
     System.Random numberSintezator = new Random();
 
-    while (i < 12)
+    for (i = 0; i < 10; i++)
     {
-        outArray[i] = numberSintezator.Next(-9, 10);
-        i++;
+        outArray[i] = numberSintezator.Next();
     }
     return outArray;
 }
 
 //The method outputs a random array of numbers to the console
-void PrintIntArray(int[] inputArray)
+void PrintIntArray(string[] inputArray)
 {
-    i = 0;
-
-    while (i < inputArray.Length - 1)
+    for (i = 0; i < inputArray.Length - 1; i++)
     {
         Console.Write(inputArray[i] + ", ");
-        i++;
     }
     Console.WriteLine(inputArray[i]);
+}
 
-//The method calculates the factorial
-double[] factorial(double[] inputArraay)
-{ 
-    double[] resultArray = new double[inputArraay.Length];
-    for (int i = 0; i <= resultArray.Length; i++)
-    {
-        resultArray[i] /= 1000;
-        if (resultArray[i] % 1000 == 0)
-        {
-            Console.WriteLine(" Нов Элемент[" + i + "]: " + resultArray[i]);
-            Console.ReadKey();
-        }
-        else
-        {
-            i++;
-        }
-    }
-    return resultArray;
-}
-}
+// //
+// string[] Conculate(string[] inputArraay)
+// {
+//     int buf = 0;
+//     int len = 0;
+//     int[] resultArray = new int[inputArraay.Length];
+
+//     for (i = 0; i < inputArraay.Length; i++)
+//     {
+//         inputArraay[i] = buf;
+//         len = Length(buf);
+//         if (len< 3)
+//         {
+//             inputArraay[i] = resultArray;
+//             Console.Write(resultArray[i] + ", ");
+//         }
+//         else
+//         {
+//             i++;
+//         }
+//     }
+// }
+
+
+int[] array = FillingArray();
+PrintIntArray(array);
+
+// Conculate(array);
