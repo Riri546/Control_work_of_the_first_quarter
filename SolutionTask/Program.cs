@@ -5,72 +5,52 @@
 //it is not recommended to use collections, it is better to do exclusively with arrays
 Console.Clear();
 
-int i;
+string[] inputArray = new string[5] { "655", "1561", "154", "1562", "165" };
+string[] bufArray = new string[inputArray.Length];
 
-//A method that is filled in randomly, the length of 10 elements
-int[] FillingArray()
+//The method runs the array in a loop to check the condition
+void SecondArrayWithIF(string[] inputArray, string[] bufArray)
 {
-    int[] outArray = new int[10];
+    int count = 0;
 
-    System.Random numberSintezator = new Random();
-
-    for (i = 0; i < 10; i++)
+    for (int i = 0; i < inputArray.Length; i++)
     {
-        outArray[i] = numberSintezator.Next(10, 1000);
-    }
-    return outArray;
-}
-
-//The method outputs the resulting array to the user
-void PrintIntArray(int[] inputArray)
-{
-
-    for (i = 0; i < inputArray.Length - 1; i++)
-    {
-        Console.Write(inputArray[i] + ", ");
-    }
-    Console.WriteLine(inputArray[i]);
-}
-
-//
-int[] Conculate(int[] inputArraay)
-{
-    int constant = 3;
-    int size = inputArraay.Length;
-
-    for (i = 0; i < size; i++)
-    {
-        while (inputArraay[i] < constant)
+        if (inputArray[i].Length <= 3)
         {
-            size = size - 1;
-
-            if (size < 1)
-            {
-                break;
-            }
-
-            int val = inputArraay[i];
-            inputArraay[i] = inputArraay[size];
-            inputArraay[size] = val;
+            bufArray[count] = inputArray[i];
+            count++;
         }
     }
-    return val;
 }
 
-void ResultPrintIntArray(int[] inputArray)
+//The method outputs the result for the user to the console
+void PrintResultArray(string[] array)
 {
-    Console.WriteLine(" ");
-    Console.WriteLine("Измененный массив: ");
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.Write("Result array: ");
+    Console.ResetColor();
 
-    for (int i = 0; i <inputArray.Length; i++)
-        Console.Write("{0}", B[i]);
 
-    Console.ReadKey();
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
 }
 
+//The body of the task, launches the ce methods
+void Result()
+{
+    DateTime d1 = DateTime.Now;
 
-int[] array = FillingArray();
-PrintIntArray(array);
+    SecondArrayWithIF(inputArray, bufArray);
+    PrintResultArray(bufArray);
 
-int[] resultArray = Conculate(array);
-ResultPrintIntArray(resultArray);
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.Write("Solution time: ");
+    Console.ResetColor();
+
+    Console.WriteLine(DateTime.Now - d1);
+}
+
+Result();
