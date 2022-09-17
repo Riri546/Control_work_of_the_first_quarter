@@ -9,7 +9,7 @@ string[] inputArray = new string[5] { "655", "1561", "154", "1562", "165" };
 string[] bufArray = new string[inputArray.Length];
 
 //The method runs the array in a loop to check the condition
-void SecondArrayWithIF(string[] inputArray, string[] bufArray)
+void FillingArray(string[] inputArray, string[] bufArray)
 {
     int count = 0;
 
@@ -43,7 +43,7 @@ void Result()
 {
     DateTime d1 = DateTime.Now;
 
-    SecondArrayWithIF(inputArray, bufArray);
+    FillingArray(inputArray, bufArray);
     PrintResultArray(bufArray);
 
     Console.ForegroundColor = ConsoleColor.Yellow;
